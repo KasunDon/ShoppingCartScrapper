@@ -1,0 +1,24 @@
+{
+    "name": "Sainsburys Shopping Cart Scrapper",
+    "description": "Simple project to scrape sainsbury’s shopping cart items and return data as JSON.",
+    
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+         "corneltek/getoptionkit": "~2"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    
+    "config": {
+        "bin-dir": "bin"
+    },
+    
+    
+    "autoload": {
+        "classmap": ["."],
+            "psr-4": {
+                "Sainsburys\\": "src/"
+            }
+    }
+}
